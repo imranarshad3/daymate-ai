@@ -1,6 +1,7 @@
 {
   "name": "DayMate AI",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": { "ghcr.io/devcontainers/features/github-cli:1": {} },
   "forwardPorts": [5000],
   "portsAttributes": {
     "5000": { "label": "DayMate AI", "onAutoForward": "openBrowser" }

@@ -3,7 +3,7 @@
 cd "$(dirname "$0")/.."
 [ -d client/dist ] || (npm run setup && npm run build)
 pkill -f "node server/index.js" 2>/dev/null
-nohup env PORT=5000 node server/index.js > /tmp/daymate.log 2>&1 &
+setsid nohup env PORT=5000 node server/index.js > /tmp/daymate.log 2>&1 < /dev/null &
 sleep 4
 if [ -n "$CODESPACE_NAME" ]; then
   gh codespace ports visibility 5000:public -c "$CODESPACE_NAME" >/dev/null 2>&1 || true
