@@ -1,0 +1,20 @@
+{
+  "name": "DayMate AI",
+  "short_name": "DayMate",
+  "description": "Daily todos, reminders, habits and an AI agent that plans your day.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#04050a",
+  "theme_color": "#04050a",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Talk to agent", "url": "/?agent=start" },
+    { "name": "Daily review", "url": "/?agent=review" }
+  ]
+}
