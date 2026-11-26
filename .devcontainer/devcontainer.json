@@ -1,0 +1,11 @@
+{
+  "name": "DayMate AI",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [5000],
+  "portsAttributes": {
+    "5000": { "label": "DayMate AI", "onAutoForward": "openBrowser" }
+  },
+  "postCreateCommand": "npm run setup && npm run build",
+  "postStartCommand": "bash .devcontainer/start.sh",
+  "hostRequirements": { "cpus": 2 }
+}
